@@ -7,8 +7,13 @@ conversiones = {
     "kilogramo": 1
 }
 
+unidades = ["pulgada", "centímetro", "pie", "metro", "libra", "kilogramo"]
+
+
 cantidad = float(input("Ingrese la cantidad: "))
+print("Unidades disponibles:", ", ".join(unidades))
 unidad_origen = input("Ingrese la unidad de origen: ")
+print("Unidades disponibles:", ", ".join(unidades))
 unidad_destino = input("Ingrese la unidad de destino: ")
 
 factor = conversiones[unidad_origen] / conversiones[unidad_destino]
